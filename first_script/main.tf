@@ -21,5 +21,8 @@ resource "aws_s3_bucket" "mqs-sample-bucket-terraform-programaticaly" {
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
+    ManagedBy = "Terraform"
+    Owner = "Carlos Malaquias"
+    UpdateAt = "2021-01-18"
   }
 }
