@@ -3,11 +3,11 @@ terraform {
 
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "4.44.0"
     }
   }
-  
+
 }
 
 provider "aws" {
@@ -15,16 +15,14 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "mqs-sample-bucket-terraform-programaticaly" {
-  bucket = "mqs-sample-bucket-terraform-programaticaly-00"
+  bucket = "mqs-sample-bucket-terraform-programaticaly-02"
   acl    = "private"
 
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
-    ManagedBy = "Terraform"
-    Owner = "Carlos Malaquias"
-    UpdateAt = "2021-12-11"
-      Service         = "Example"
-      HashiCorp-Learn = "aws-default-tags"
+    ManagedBy   = "Terraform"
+    Owner       = "Carlos Malaquias"
+    UpdateAt    = "2021-12-11"
   }
 }
