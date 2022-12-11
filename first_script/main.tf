@@ -24,5 +24,7 @@ resource "aws_s3_bucket" "mqs-sample-bucket-terraform-programaticaly" {
     ManagedBy = "Terraform"
     Owner = "Carlos Malaquias"
     UpdateAt = "2021-12-11"
+      Service         = "Example"
+      HashiCorp-Learn = "aws-default-tags"
   }
 }
