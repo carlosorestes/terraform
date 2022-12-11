@@ -23,6 +23,6 @@ resource "aws_s3_bucket" "mqs-sample-bucket-terraform-programaticaly" {
     Environment = "Dev"
     ManagedBy = "Terraform"
     Owner = "Carlos Malaquias"
-    UpdateAt = "2021-01-18"
+    UpdateAt = "2021-12-11"
   }
 }
